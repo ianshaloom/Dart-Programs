@@ -1,6 +1,6 @@
 // lets collect user input from this program
 
-imports 'dart:io'; // first we inport needed library
+import 'dart:io'; // first we inport needed library
 
 void main()
 {
