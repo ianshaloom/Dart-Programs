@@ -1,7 +1,11 @@
 /*  if statement in this case is the target of another if or else statement */
 
+import 'dart:io';
+
 void main() {
-  int age = 46;
+  int age;
+  stdout.write("Enter your age: ");
+  age = int.parse(stdin.readLineSync()!);
 
   if (age <= 5) {
     print("You are a Toddler.");
@@ -12,7 +16,7 @@ void main() {
     if (age == 16) {
       print("Happy Sweet Sixteen");
     } else if (age == 18) {
-      print("You are a Legal Adult now");
+      print("You are a Legal Adult Teenager");
     }
 
     print("You are a Teenager");
