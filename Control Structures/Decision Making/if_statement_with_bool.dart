@@ -3,8 +3,9 @@
 
 void main() {
   bool isMarried = false;
+  // ignore: dead_code
   if (isMarried) {
-    print("You are married.");
+    print("You are not single");
   } else {
     print("You are single.");
   }
