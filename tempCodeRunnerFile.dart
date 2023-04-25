@@ -1,39 +1,9 @@
-/* program in Dart to calculate
- power of a certain number */
+void main(){
 
- // Lets make this one FUN !!!
+List<int> numbers = [2,4,6,8,10,11,12,13,14];
 
- import 'dart:io';
- import 'dart:math';
+List<int> even = numbers.where((number)=> number.isEven).toList(); 
 
- class Power {
-   late int power;
-   late double number,powered;
+print(even);
 
-   void getPower(double a, int b){
-    powered = pow(number, power).toDouble();
-   }
-
-   set Set_Power(int power) => this.power = power;
-   set Set_Number(double number) => this.number = number;
-
-   get Get_Power => power;
-   get Get_Powered => powered;
-   get Get_Number => number;
-
-  }
-
-  void main(){
-
-    Power p = Power();
-
-    stdout.write('Enter Number: ');
-    p.Set_Number = double.parse(stdin.readLineSync()!);
-
-    stdout.write('Enter Power: ');
-    p.Set_Power = int.parse(stdin.readLineSync()!);
-
-    p.getPower(p.Get_Number, p.Get_Power);
-
-    print('${p.Get_Number} ^ ${p.Get_Power} = ${p.Get_Powered}');
-  }
+}
