@@ -19,7 +19,6 @@ class MyName extends Parents {
 }
 
 void main() {
-  int z = 0;
   MyName one = MyName();
   print('Print for Object One');
   {
