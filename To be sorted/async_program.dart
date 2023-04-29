@@ -1,18 +1,18 @@
+import 'dart:async';
 import 'dart:io';
-import 'dart:isolate';
 
-Future<void> longRunningOperation(String message) async {
+Future<void> longRunningOperation() async {
   for (int i = 0; i < 5; i++) {
     await Future.delayed(Duration(seconds: 1));
 
-    print("$message: $i");
+    print("index: $i");
   }
 }
 
-void main() {
+main() {
   print("start of long running operation");
 
-  Isolate.spawn(longRunningOperation, "Hello");
+  longRunningOperation();
 
   print("continuing main body");
 
