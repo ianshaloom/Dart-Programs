@@ -9,7 +9,7 @@ Future<void> longRunningOperation() async {
   }
 }
 
-main() {
+void main() {
   print("start of long running operation");
 
   longRunningOperation();
