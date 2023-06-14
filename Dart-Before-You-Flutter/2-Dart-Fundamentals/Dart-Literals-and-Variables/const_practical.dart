@@ -2,7 +2,9 @@ class ConstPra {
   // Well you cant declare constant variables without static keyword because
   // dayInWeek is implicitly considered static because its value should not
   // change accross the class and objects
-  const daysInWeek = 7;
+  // Example of initialization with error is 👇
+  
+      /* const daysInWeek = 7; */
   
   // Adding static removes the error
   static const weekendDays = ["Friday", "Saturday", "Sunday"];
